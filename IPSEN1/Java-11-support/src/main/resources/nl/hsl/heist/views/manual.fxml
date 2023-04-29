@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane fx:id="manualPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="970.0" prefWidth="1000.0" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/backgroundtest.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.controllers.ManualController">
+   <children>
+      <Pane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ScrollPane fx:id="manualScrollPane" prefHeight="823.0" prefWidth="1000.0">
+               <content>
+                  <ImageView fx:id="manualImageView" fitHeight="1544.0" fitWidth="981.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/manual/frontside.png" />
+                     </image>
+                  </ImageView>
+               </content>
+            </ScrollPane>
+         </children>
+      </Pane>
+
+      <ImageView fx:id="soundButton" fitHeight="91.0" fitWidth="94.0" onMouseClicked="#playSound" pickOnBounds="true" preserveRatio="true" translateX="-250.0" translateY="410.0">
+         <image>
+            <Image url="@nl/hsl/heist/resources/images/UI/sound_button.png" />
+         </image></ImageView>
+
+      <ImageView fitHeight="122.0" fitWidth="122.0" onMouseClicked="#previousPage" pickOnBounds="true" preserveRatio="true" translateX="-450.0" translateY="415.0">
+         <image>
+             <Image url="@nl/hsl/heist/resources/images/manual/arrowleft.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="122.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true" translateX="450.0" translateY="415.0">
+         <image>
+            <Image url="@nl/hsl/heist/resources/images/manual/arrowright.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="90.0" fitWidth="90.0" onMouseClicked="#hide" pickOnBounds="true" preserveRatio="true" translateX="250.0" translateY="407.0">
+         <image>
+             <Image url="@nl/hsl/heist/resources/images/manual/cross.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="manualLabel" text="1/10" translateY="410.0">
+         <font>
+            <Font size="96.0" />
+         </font>
+      </Label>
+   </children>
+</StackPane>

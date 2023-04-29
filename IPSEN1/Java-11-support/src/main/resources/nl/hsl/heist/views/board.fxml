@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="boardBorderPane" prefHeight="564.0" prefWidth="1048.0" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/paper_bg.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.BoardView">
+    <left>
+        <ImageView fitHeight="221.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_RIGHT">
+            <image>
+                <Image url="@nl/hsl/heist/resources/images/UI/tower.png" />
+            </image>
+        </ImageView>
+    </left>
+    <right>
+        <VBox alignment="BOTTOM_CENTER" prefHeight="570.0" prefWidth="301.0" BorderPane.alignment="CENTER_LEFT">
+            <children>
+            <AnchorPane>
+               <children>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="53.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/leastcurse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="129.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostcurse.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="26.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/firstescape.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="96.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/secondescape.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="163.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/lastescape.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="27.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mosttome.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="97.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostjewel.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="164.0" layoutY="211.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostfossil.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="26.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostartifact.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="96.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostpotion.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="163.0" layoutY="308.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostthree.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="58.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostfour.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="89.0" fitWidth="95.0" layoutX="134.0" layoutY="407.0" pickOnBounds="true" preserveRatio="true" translateX="28.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/prestiges/mostfive.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+                <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" onMouseClicked="#handleBridgeClick" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@nl/hsl/heist/resources/images/UI/bridge.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </right>
+</BorderPane>

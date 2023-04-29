@@ -1,0 +1,323 @@
+[
+  {
+    "name": "de kristallen kom",
+    "soundpath": "sounds/de_kristallen_kom.mp3",
+    "points": [6],
+    "symbols": ["artifact"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_kristallen_kom.png"
+
+  },
+  {
+    "name": "necronomicon",
+    "soundpath": "sounds/necronomicon.mp3",
+    "points": [7],
+    "symbols": ["tome"],
+    "curses": 1,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_necronomicon.png"
+  },
+  {
+    "name": "tiktaalik fin",
+    "soundpath": "sounds/tiktaalik_fin.mp3",
+    "points": [5],
+    "symbols": ["fossil"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_tiktaalik_fin.png"
+  },
+  {
+    "name": "de 7 aspecten van eenheid",
+    "soundpath": "sounds/de_7_aspecten_van_eenheid.mp3",
+    "points": [7],
+    "symbols": ["jewel"],
+    "curses": 1,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_7_aspecten_van_eenheid.png"
+  },
+  {
+    "name": "robijnen slippers",
+    "soundpath": "sounds/robijnen_slippers.mp3",
+    "points": [4],
+    "symbols": ["jewel"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_robijnen_slippers.png"
+  },
+  {
+    "name": "diamanten millennium roos",
+    "soundpath": "sounds/diamanten_millennium_roos.mp3",
+    "points": [6],
+    "symbols": ["jewel"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_diamanten_millennium_roos.png"
+  },
+  {
+    "name": "spagyrische paracelsus",
+    "soundpath": "sounds/spagyrische_paracelsus.mp3",
+    "points": [4],
+    "symbols": ["potion"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_spagyrische_paracelsus.png"
+  },
+  {
+    "name": "prismatische pyramide",
+    "soundpath": "sounds/prismatische_pyramide.mp3",
+    "points": [3],
+    "symbols": ["jewel"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_prismatische_pyramide.png"
+  },
+  {
+    "name": "de vijf ringen",
+    "soundpath": "sounds/de_vijf_ringen.mp3",
+    "points": [5],
+    "symbols": ["jewel"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_vijf_ringen.png"
+  },
+  {
+    "name": "slaapdrank",
+    "soundpath": "sounds/slaapdrank.mp3",
+    "points": [3],
+    "symbols": ["potion"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_slaapdrank.png"
+  },
+  {
+    "name": "mechanische uil",
+    "soundpath": "sounds/mechanische_uil.mp3",
+    "points": [5],
+    "symbols": ["artifact"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_mechanische_uil.png"
+  },
+  {
+    "name": "aladdins lamp",
+    "soundpath": "sounds/aladdins_lamp.mp3",
+    "points": [4],
+    "symbols": ["artifact"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_aladdins_lamp.png"
+  },
+  {
+    "name": "het drankje van dr.jekyll",
+    "soundpath": "sounds/het_drankje_van_dr_jekyll.mp3",
+    "points": [6],
+    "symbols": ["potion"],
+    "curses": 1,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_het_drankje_van_dr_jekyll.png"
+  },
+  {
+    "name": "brouwsel van quietus",
+    "soundpath": "sounds/brouwsel_van_quietus.mp3",
+    "points": [5],
+    "symbols": ["potion"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_brouwsel_van_quietus.png"
+  },
+  {
+    "name": "grimoire van de eeuwenouden",
+    "soundpath": "sounds/grimoire_van_de_eeuwenouden.mp3",
+    "points": [6],
+    "symbols": ["tome"],
+    "curses": 1,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_grimoire_van_de_eeuwenouden.png"
+  },
+  {
+    "name": "canopische vaas van nur",
+    "soundpath": "sounds/canopische_vaas_van_nur.mp3",
+    "points": [3],
+    "symbols": ["artifact"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_canopische_vaas_van_nur.png"
+  },
+  {
+    "name": "vleugels van een fee",
+    "soundpath": "sounds/vleugels_van_een_fee.mp3",
+    "points": [3],
+    "symbols": ["fossil"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_vleugels_van_een_fee.png"
+  },
+  {
+    "name": "spiegel der leed",
+    "soundpath": "sounds/spiegel_der_leed.mp3",
+    "points": [7],
+    "symbols": ["artifact"],
+    "curses": 1,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_spiegel_der_leed.png"
+  },
+  {
+    "name": "de hiel van achilles",
+    "soundpath": "sounds/de_hiel_van_achilles.mp3",
+    "points": [4],
+    "symbols": ["fossil"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_hiel_van_achilles.png"
+  },
+  {
+    "name": "de sterren der nachtelijke hemel",
+    "soundpath": "sounds/de_sterren_der_nachtelijke_hemel.mp3",
+    "points": [3],
+    "symbols": ["tome"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_sterren_der_nachtelijke_hemel.png"
+  },
+  {
+    "name": "de gouden eeuw van arabie",
+    "soundpath": "sounds/de_gouden_eeuw_van_arabie.mp3",
+    "points": [4],
+    "symbols": ["tome"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_gouden_eeuw_van_arabie.png"
+  },
+  {
+    "name": "hoektand van de basilisk",
+    "soundpath": "sounds/hoektand_van_de_basilisk.mp3",
+    "points": [7],
+    "symbols": ["fossil"],
+    "curses": 1,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_hoektand_van_de_basilisk.png"
+  },
+  {
+    "name": "hoorn van een eenhoorn",
+    "soundpath": "sounds/hoorn_van_een_eenhoorn.mp3",
+    "points": [6],
+    "symbols": ["fossil"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_hoorn_van_een_eenhoorn.png"
+  },
+  {
+    "name": "de legendes van valeria",
+    "soundpath": "sounds/de_legendes_van_valeria.mp3",
+    "points": [5],
+    "symbols": ["tome"],
+    "curses": 0,
+    "moon": "none",
+    "command": "normal",
+    "image": "images/cards/dark_de_legendes_van_valeria.png"
+  },
+  {
+    "name": "amulet van nae",
+    "soundpath": "sounds/amulet_van_nae.mp3",
+    "points": [0],
+    "symbols": [],
+    "curses": 2,
+    "moon": "full",
+    "command": "giveamulet",
+    "image": "images/cards/dark_amulet_van_nae.png"
+  },
+  {
+    "name": "vervalst certificaat",
+    "soundpath": "sounds/vervalst_certificaat.mp3",
+    "points": [0],
+    "symbols": [],
+    "curses": 1,
+    "moon": "full",
+    "command": "getprestige",
+    "image": "images/cards/dark_vervalst_certificaat.png"
+  },
+  {
+    "name": "bezeten matroesjikas",
+    "soundpath": "sounds/bezeten_matroesjkas.mp3",
+    "points": [3, 4, 5],
+    "symbols": [],
+    "curses": 1,
+    "moon": "full",
+    "command": "normal",
+    "image": "images/cards/dark_bezeten_matroesjikas.png"
+  },
+  {
+    "name": "stralende hamsa",
+    "soundpath": "sounds/stralende_hamsa.mp3",
+    "points": [5],
+    "symbols": [],
+    "curses": -2,
+    "moon": "full",
+    "command": "normal",
+    "image": "images/cards/dark_stralende_hamsa.png"
+  },
+  {
+    "name": "zandloper van de slang",
+    "soundpath": "sounds/zandloper_van_de_slang.mp3",
+    "points": [1],
+    "symbols": ["wild"],
+    "curses": 1,
+    "moon": "full",
+    "command": "extraturn",
+    "image": "images/cards/dark_zandloper_van_de_slang.png"
+  },
+  {
+    "name": "dievenmantel der portalen",
+    "soundpath": "sounds/dievenmantel_der_portalen.mp3",
+    "points": [0],
+    "symbols": [],
+    "curses": 1,
+    "moon": "full",
+    "command": "yankcard",
+    "image": "images/cards/dark_dievenmantel_der_portalen.png"
+  },
+  {
+    "name": "verhalen van mythen en magie",
+    "soundpath": "sounds/verhalen_van_mythen_en_magie.mp3",
+    "points": [6],
+    "symbols": ["jewel", "tome"],
+    "curses": 1,
+    "moon": "full",
+    "command": "discard",
+    "image": "images/cards/dark_verhalen_van_mythen_en_magie.png"
+  },
+  {
+    "name": "zand der illusie",
+    "soundpath": "sounds/zand_der_illusie.mp3",
+    "points": [0],
+    "symbols": [],
+    "curses": 1,
+    "moon": "full",
+    "command": "copycard",
+    "image": "images/cards/dark_zand_der_illusie.png"
+  }
+]

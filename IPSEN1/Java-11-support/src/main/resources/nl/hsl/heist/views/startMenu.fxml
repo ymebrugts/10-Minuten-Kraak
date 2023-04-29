@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<StackPane fx:id="container" stylesheets="@nl/hsl/heist/views/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.161-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.FXView">
+   <children>
+      <BorderPane fx:id="top" prefHeight="564.0" prefWidth="1048.0" style="-fx-background-size: cover;">
+         <right>
+            <VBox alignment="TOP_CENTER" prefHeight="100.0" prefWidth="75.0" style="-fx-background-color: #0b4775;">
+               <children>
+                  <ImageView fx:id="manualIcon" fitWidth="60.0" layoutX="13.0" layoutY="80.0" onMouseClicked="#showManual" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/UI/manual.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="cardsIcon" fitWidth="70.0" onMouseClicked="#showHand" pickOnBounds="true" preserveRatio="true" translateY="10.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/UI/cards.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="boardIcon" fitWidth="60.0" layoutX="23.0" layoutY="80.0" onMouseClicked="#showPlayer" pickOnBounds="true" preserveRatio="true" translateY="20.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/UI/board.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <ImageView fx:id="playerIcon" fitWidth="60.0" layoutX="23.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" translateY="20.0">
+                     <image>
+                        <Image url="@nl/hsl/heist/resources/images/UI/Player.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets top="10.0" />
+                     </VBox.margin>
+                  </ImageView>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <StackPane fx:id="views" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label text="Ip Address" textFill="#dfebf9">
+                           <font>
+                              <Font name="Felt Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="HostIp" alignment="CENTER" maxWidth="359.0" opacity="0.55" prefHeight="34.0" prefWidth="359.0">
+                           <font>
+                              <Font name="Felt Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <Label text="Naam" textFill="#dfebf9">
+                           <font>
+                              <Font name="Felt Regular" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="nameField" alignment="CENTER" maxWidth="362.0" opacity="0.55" prefHeight="34.0" prefWidth="301.0">
+                           <font>
+                              <Font name="Felt Regular" size="16.0" />
+                           </font>
+                        </TextField>
+                        <HBox fx:id="hboxJoinGame" alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="joingameButton" mnemonicParsing="false" onAction="#joinGame" prefHeight="36.0" prefWidth="170.0" style="-fx-background-color: #4794c1;" text="Join Game" textFill="#dfebf9">
+                                 <font>
+                                    <Font name="Felt Regular" size="18.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="10.0" right="10.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button layoutX="474.0" layoutY="42.0" mnemonicParsing="false" onAction="#hostGame" prefHeight="36.0" prefWidth="173.0" style="-fx-background-color: #4794c1;" text="Host Game" textFill="#dfebf9">
+                                 <font>
+                                    <Font name="Felt Regular" size="18.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </StackPane>
+         </center>
+         <left>
+            <ImageView pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 100;" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@nl/hsl/heist/resources/images/UI/title.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#0b2a43" />
+               </effect>
+            </ImageView>
+         </left>
+      </BorderPane>
+   </children>
+</StackPane>

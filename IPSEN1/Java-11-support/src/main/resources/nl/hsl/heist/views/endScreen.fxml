@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<StackPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.EndScreenView">
+   <children>
+      <BorderPane fx:id="borderPane" prefHeight="564.0" prefWidth="1048.0" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/startscreen.jpg&quot;); -fx-background-size: cover;">
+         <center>
+            <VBox maxHeight="400.0" maxWidth="400.0" prefHeight="430.0" prefWidth="336.0" style="-fx-background-color: rgba(15, 70, 111, 0.3);" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox fx:id="winnerContainer" alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" text="The Game Has Ended" textFill="#dfebf9">
+                           <font>
+                              <Font name="Felt Regular" size="32.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <opaqueInsets>
+                        <Insets bottom="50.0" left="50.0" right="50.0" top="50.0" />
+                     </opaqueInsets>
+                  </VBox>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <BorderPane.margin>
+                  <Insets right="50.0" />
+               </BorderPane.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </VBox>
+         </center>
+         <left>
+            <ImageView pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 100;" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@nl/hsl/heist/resources/images/UI/title.png" />
+               </image>
+               <effect>
+                  <DropShadow color="#0b2a43" />
+               </effect>
+            </ImageView>
+         </left>
+      </BorderPane>
+      <Pane fx:id="loadPane" disable="true" maxHeight="300.0" maxWidth="300.0" prefHeight="50.0" prefWidth="50.0" StackPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="loading" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
+               <image>
+                  <Image url="@nl/hsl/heist/resources/images/UI/loading_processing_1.gif" />
+               </image></ImageView>
+         </children>
+         <StackPane.margin>
+            <Insets left="375.0" top="100.0" />
+         </StackPane.margin>
+      </Pane>
+   </children>
+</StackPane>

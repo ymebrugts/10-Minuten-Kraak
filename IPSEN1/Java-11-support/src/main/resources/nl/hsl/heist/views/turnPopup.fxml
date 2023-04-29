@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" mouseTransparent="true" prefHeight="300" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.controllers.TurnPopupController">
+   <children>
+      <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="1000.0" style="-fx-background-color: #4794c1;">
+         <left>
+            <ImageView fx:id="playerAvatar" fitHeight="191.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@nl/hsl/heist/resources/images/UI/blue.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+            </ImageView>
+         </left>
+         <center>
+            <Pane prefHeight="275.0" prefWidth="1000.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="textBox" layoutX="100.0" layoutY="108.0" text="is nu aan de beurt!" textFill="WHITE">
+                     <font>
+                        <Font name="Felt Regular" size="48.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="playerName" maxWidth="600" layoutX="100.0" layoutY="23.0" text="Spelernaam" textFill="WHITE">
+                     <font>
+                        <Font name="Felt Regular" size="64.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>
