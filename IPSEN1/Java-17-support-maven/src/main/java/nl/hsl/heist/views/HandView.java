@@ -51,6 +51,7 @@ public class HandView extends UnicastRemoteObject implements GamestateObserver {
     @FXML private javafx.scene.layout.VBox playerPane;
     @FXML private javafx.scene.layout.VBox allCardsPane;
     @FXML private javafx.scene.control.ScrollPane handContainer;
+    @FXML private javafx.scene.layout.BorderPane handBorderPane;
 
     private GameAction remoteGameController;
     private List<Card> cards;

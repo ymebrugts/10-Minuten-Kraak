@@ -2,9 +2,9 @@
 
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.*?>
-<ScrollPane fx:id="handContainer" fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.HandView">
+<ScrollPane fx:id="handContainer" stylesheets="@hand.css" fitToHeight="true" fitToWidth="true" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.HandView">
    <content>
-      <BorderPane fx:id="handBorderPane" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/paper_bg.png&quot;); -fx-background-size: cover;">
+      <BorderPane fx:id="handBorderPane">
          <left>
             <VBox fx:id="playerPane" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
          </left>

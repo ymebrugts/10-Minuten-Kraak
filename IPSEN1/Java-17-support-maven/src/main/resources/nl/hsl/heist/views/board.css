@@ -1,0 +1,4 @@
+#boardBorderPane {
+    -fx-background-image: url("../resources/images/backgrounds/paper_bg.png");
+    -fx-background-size: cover;
+}

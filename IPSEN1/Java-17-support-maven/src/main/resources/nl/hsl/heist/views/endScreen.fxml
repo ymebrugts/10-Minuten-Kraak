@@ -7,9 +7,9 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-<StackPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.EndScreenView">
+<StackPane xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@endScreen.css" fx:controller="nl.hsl.heist.views.EndScreenView">
    <children>
-      <BorderPane fx:id="borderPane" prefHeight="564.0" prefWidth="1048.0" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/startscreen.jpg&quot;); -fx-background-size: cover;">
+      <BorderPane fx:id="borderPane" prefHeight="564.0" prefWidth="1048.0" >
          <center>
             <VBox maxHeight="400.0" maxWidth="400.0" prefHeight="430.0" prefWidth="336.0" style="-fx-background-color: rgba(15, 70, 111, 0.3);" BorderPane.alignment="CENTER">
                <children>

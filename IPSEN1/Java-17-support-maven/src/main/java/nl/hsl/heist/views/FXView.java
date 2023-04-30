@@ -240,7 +240,7 @@ public class FXView {
      * @throws NotBoundException :
      */
     @FXML public void showHand() throws IOException, NotBoundException {
-        if (DraworUpdate == 0) {
+        if (DraworUpdate == 0) { //if first load
             FXMLLoader fxmlLoader2 = new FXMLLoader(getClass().getResource("Hand.fxml"));
             hand = fxmlLoader2.load();
             handcontroller = fxmlLoader2.getController();
@@ -257,7 +257,7 @@ public class FXView {
             cardsIcon.setStyle("-fx-opacity: 1;");
             manualIcon.setStyle("-fx-opacity: 0.6;");
             boardIcon.setStyle("-fx-opacity: 0.6");
-        } else if (DraworUpdate == 1) {
+        } else if (DraworUpdate == 1) { //if already loaded but in the back
             System.out.println("[+] update HANDMODE " + DraworUpdate);
             stackPaneHand.toFront();
             cardsIcon.setStyle("-fx-opacity: 1;");
@@ -316,6 +316,6 @@ public class FXView {
         EndScreenView endScreenView = fxmlLoader.getController();
         endScreenView.setPlayers(players);
         endScreenView.postScore();
-        container.getChildren().add(root);
+        container.getChildren().setAll(root);
     }
 }

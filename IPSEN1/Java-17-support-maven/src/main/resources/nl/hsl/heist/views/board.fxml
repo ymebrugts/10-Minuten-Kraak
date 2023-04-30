@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<BorderPane fx:id="boardBorderPane" prefHeight="564.0" prefWidth="1048.0" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/paper_bg.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.BoardView">
+<BorderPane fx:id="boardBorderPane" stylesheets="@board.css" prefHeight="564.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.BoardView">
     <left>
         <ImageView fitHeight="221.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="TOP_RIGHT">
             <image>

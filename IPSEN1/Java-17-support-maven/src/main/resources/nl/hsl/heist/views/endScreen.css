@@ -1,0 +1,4 @@
+#borderPane {
+    -fx-background-image: url("../resources/images/backgrounds/startscreen.jpg");
+    -fx-background-size: cover;
+}
