@@ -203,7 +203,8 @@ public class BoardView extends UnicastRemoteObject implements BoardObserver {
                             image = board.getTile(row, col).getCard().getImagePath();
                         }
                         // With this code, the first setup is fast, however it will reload on every update.
-                        Image cardImage = new Image("nl/hsl/heist/resources/" + image, true);
+
+                        Image cardImage = new Image(BoardView.class.getResource("/nl/hsl/heist/resources/" + image).toExternalForm(), true);
                         cardContainer.setImage(cardImage);
                         cardContainer.setFitWidth(TILE_SIZE_WIDTH);
                         cardContainer.setFitHeight(TILE_SIZE_HEIGHT);
