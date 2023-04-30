@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.text.Font?>
 
-<StackPane fx:id="manualPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="970.0" prefWidth="1000.0" style="-fx-background-image: url(&quot;nl/hsl/heist/resources/images/backgrounds/backgroundtest.png&quot;); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.controllers.ManualController">
+<StackPane fx:id="manualPane" stylesheets="@manual.css" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="970.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.controllers.ManualController">
    <children>
       <Pane prefHeight="200.0" prefWidth="200.0">
          <children>

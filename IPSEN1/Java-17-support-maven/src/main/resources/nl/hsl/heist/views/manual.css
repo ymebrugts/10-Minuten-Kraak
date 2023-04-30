@@ -1,0 +1,4 @@
+#manualPane {
+    -fx-background-image: url("../resources/images/backgrounds/backgroundtest.png");
+    -fx-background-size: cover;
+}
