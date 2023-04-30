@@ -26,6 +26,9 @@ import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
 import java.rmi.server.UnicastRemoteObject;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.CompletionException;
+import java.util.function.Function;
 
 import static nl.hsl.heist.shared.GameConfig.COLS;
 import static nl.hsl.heist.shared.GameConfig.ROWS;
@@ -93,16 +96,34 @@ public class BoardView extends UnicastRemoteObject implements BoardObserver {
     @Override public void modelChanged(RemoteBoard board) throws RemoteException {
         System.out.println("[+] board has changed!");
         // called from another thread, so we have to use the platform.
-        Platform.runLater(
-                () -> {
+        // Create a new CompletableFuture that runs the UI updates on the JavaFX Application Thread
+        System.out.println("[+] board has changed!");
+
+        CompletableFuture<Void> uiUpdateFuture = CompletableFuture.supplyAsync(() -> {
+            CompletableFuture<Void> uiUpdateCompletion = new CompletableFuture<>();
+            Platform.runLater(() -> {
+                try {
                     if (scrollPane == null) {
                         paintBoard(board);
                     } else {
                         updateTiles(board);
                     }
-                });
+                    uiUpdateCompletion.complete(null);
+                } catch (Exception e) {
+                    uiUpdateCompletion.completeExceptionally(e);
+                }
+            });
+            return uiUpdateCompletion;
+        }).thenCompose(Function.identity());
 
-        remoteGameController.saveGame();
+        CompletableFuture<Void> saveGameFuture = uiUpdateFuture.thenRunAsync(() -> {
+            try {
+                remoteGameController.saveGame();
+            } catch (RemoteException e) {
+                System.out.println("RemoteException: Saving failed");
+                System.out.println(e.getMessage());
+            }
+        });
 
     }
 

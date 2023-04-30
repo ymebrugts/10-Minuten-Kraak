@@ -62,7 +62,7 @@ public class GameController implements GameAction, Serializable {
         return registeredPlayers;
     }
 
-    public void saveGame() throws RemoteException  {
+    public void saveGame() throws RemoteException {
         saveGameController = new SaveGameController(game);
         saveGameController.saveGame();
     }
@@ -143,7 +143,7 @@ public class GameController implements GameAction, Serializable {
             System.out.println("[+] it's not your turn!");
             return;
         }
-        
+
         if (clickController.discardCard(currentPlayer, cardClicked)) {
             game.moveTurn(currentPlayer);
         }
