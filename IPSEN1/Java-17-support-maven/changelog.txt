@@ -1,0 +1,9 @@
+
+
+30-04-2023: Java 17 and Maven support
+- Change position of resources and FXML files because it couldn't find them
+- Change the way the code loads files so that we can create a working JAR
+- Change the way CSS paths get loaded because they were broken
+- Added Maven support to make dependency management easier
+- Added Module support to adhere to Java 9+ standards
+- Replaced views.Add(viewItem) with views.setAll(viewItem) because pages were overlapping on Java 17 while the Java 8 version is working just fine with Add()

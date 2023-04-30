@@ -137,7 +137,7 @@ public class FXView {
         lobbyView.setRemoteGameController(remoteGameController);
         lobbyView.setClientController(clientController);
         lobbyView.createLobby();
-        views.getChildren().add(root);
+        views.getChildren().setAll(root);
         views.getChildren().remove(nameField);
     }
 
