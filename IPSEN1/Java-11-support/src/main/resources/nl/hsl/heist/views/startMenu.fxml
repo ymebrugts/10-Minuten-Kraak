@@ -6,7 +6,7 @@
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
-<StackPane fx:id="container" stylesheets="@nl/hsl/heist/views/stylesheet.css" xmlns="http://javafx.com/javafx/8.0.161-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.FXView">
+<StackPane fx:id="container" stylesheets="@stylesheet.css" xmlns="http://javafx.com/javafx/8.0.161-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.hsl.heist.views.FXView">
    <children>
       <BorderPane fx:id="top" prefHeight="564.0" prefWidth="1048.0" style="-fx-background-size: cover;">
          <right>
@@ -14,7 +14,7 @@
                <children>
                   <ImageView fx:id="manualIcon" fitWidth="60.0" layoutX="13.0" layoutY="80.0" onMouseClicked="#showManual" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@nl/hsl/heist/resources/images/UI/manual.png" />
+                        <Image url="@../resources/images/UI/manual.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="10.0" top="10.0" />
@@ -22,7 +22,7 @@
                   </ImageView>
                   <ImageView fx:id="cardsIcon" fitWidth="70.0" onMouseClicked="#showHand" pickOnBounds="true" preserveRatio="true" translateY="10.0">
                      <image>
-                        <Image url="@nl/hsl/heist/resources/images/UI/cards.png" />
+                        <Image url="@../resources/images/UI/cards.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="10.0" />
@@ -30,7 +30,7 @@
                   </ImageView>
                   <ImageView fx:id="boardIcon" fitWidth="60.0" layoutX="23.0" layoutY="80.0" onMouseClicked="#showPlayer" pickOnBounds="true" preserveRatio="true" translateY="20.0">
                      <image>
-                        <Image url="@nl/hsl/heist/resources/images/UI/board.png" />
+                        <Image url="@../resources/images/UI/board.png" />
                      </image>
                      <VBox.margin>
                         <Insets bottom="10.0" />
@@ -38,7 +38,7 @@
                   </ImageView>
                   <ImageView fx:id="playerIcon" fitWidth="60.0" layoutX="23.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true" translateY="20.0">
                      <image>
-                        <Image url="@nl/hsl/heist/resources/images/UI/Player.png" />
+                        <Image url="@../resources/images/UI/Player.png" />
                      </image>
                      <VBox.margin>
                         <Insets top="10.0" />
@@ -97,7 +97,7 @@
          <left>
             <ImageView pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 100;" BorderPane.alignment="CENTER">
                <image>
-                  <Image url="@nl/hsl/heist/resources/images/UI/title.png" />
+                  <Image url="@../resources/images/UI/title.png" />
                </image>
                <effect>
                   <DropShadow color="#0b2a43" />

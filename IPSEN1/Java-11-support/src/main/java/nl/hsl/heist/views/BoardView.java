@@ -152,9 +152,10 @@ public class BoardView extends UnicastRemoteObject implements BoardObserver {
                     }
 
                     if (gameTile instanceof Player) {
-
+                        //Set the player image on the board at the correct position
                         String imgPath = ((Player)gameTile).getAvatar().getImgPath();
-                        tile.setStyle("-fx-background-image: url('nl/hsl/heist/resources/" + imgPath + "'); -fx-background-size: contain; -fx-background-repeat: stretch; -fx-background-position: center center");
+                        String playerImage = BoardView.class.getResource("/nl/hsl/heist/resources/" + imgPath).toExternalForm();
+                        tile.setStyle("-fx-background-image: url(" + playerImage + "); -fx-background-size: contain; -fx-background-repeat: stretch; -fx-background-position: center center");
                     }
                 } catch (RemoteException e) {
                     e.printStackTrace();
@@ -183,7 +184,8 @@ public class BoardView extends UnicastRemoteObject implements BoardObserver {
         try {
             Pane root = new Pane();
             root.setPrefSize((TILE_SIZE_WIDTH + 1) * COLS, (TILE_SIZE_HEIGHT +2) * ROWS);
-            root.setStyle("-fx-background-image: url('nl/hsl/heist/resources/images/backgrounds/paper_bg.png'); -fx-background-size: cover; -fx-background-repeat: stretch");
+            String backgroundUrl = BoardView.class.getResource("/nl/hsl/heist/resources/images/backgrounds/paper_bg.png").toExternalForm();
+            root.setStyle("-fx-background-image: url(" + backgroundUrl + "); -fx-background-size: cover; -fx-background-repeat: stretch");
             for (int row = 0; row < ROWS ; row++) {
                 for (int col = 0; col < COLS; col++) {
                     final int row_number = row;
@@ -213,7 +215,8 @@ public class BoardView extends UnicastRemoteObject implements BoardObserver {
 
                     if (gameTile instanceof Player) {
                         String imgPath = ((Player)gameTile).getAvatar().getImgPath();
-                        tile.setStyle("-fx-background-image: url('nl/hsl/heist/resources/" + imgPath + "'); -fx-background-size: contain; -fx-background-repeat: stretch; -fx-background-position: center center");
+                        String imageUrl = BoardView.class.getResource("/nl/hsl/heist/resources/" + imgPath).toExternalForm();
+                        tile.setStyle("-fx-background-image: url(" + imageUrl + "); -fx-background-size: contain; -fx-background-repeat: stretch; -fx-background-position: center center");
                     }
 
                     tile.setOnMouseClicked( (MouseEvent e) -> {

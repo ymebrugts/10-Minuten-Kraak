@@ -40,7 +40,7 @@
          <left>
             <ImageView pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 100;" BorderPane.alignment="CENTER">
                <image>
-                  <Image url="@nl/hsl/heist/resources/images/UI/title.png" />
+                  <Image url="@../resources/images/UI/title.png" />
                </image>
                <effect>
                   <DropShadow color="#0b2a43" />
@@ -52,7 +52,7 @@
          <children>
             <ImageView fx:id="loading" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" visible="false">
                <image>
-                  <Image url="@nl/hsl/heist/resources/images/UI/loading_processing_1.gif" />
+                  <Image url="@../resources/images/UI/loading_processing_1.gif" />
                </image></ImageView>
          </children>
          <StackPane.margin>

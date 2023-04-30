@@ -16,7 +16,7 @@
                <content>
                   <ImageView fx:id="manualImageView" fitHeight="1544.0" fitWidth="981.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@nl/hsl/heist/resources/images/manual/frontside.png" />
+                        <Image url="@../resources/images/manual/frontside.png" />
                      </image>
                   </ImageView>
                </content>
@@ -26,22 +26,22 @@
 
       <ImageView fx:id="soundButton" fitHeight="91.0" fitWidth="94.0" onMouseClicked="#playSound" pickOnBounds="true" preserveRatio="true" translateX="-250.0" translateY="410.0">
          <image>
-            <Image url="@nl/hsl/heist/resources/images/UI/sound_button.png" />
+            <Image url="@../resources/images/UI/sound_button.png" />
          </image></ImageView>
 
       <ImageView fitHeight="122.0" fitWidth="122.0" onMouseClicked="#previousPage" pickOnBounds="true" preserveRatio="true" translateX="-450.0" translateY="415.0">
          <image>
-             <Image url="@nl/hsl/heist/resources/images/manual/arrowleft.png" />
+             <Image url="@../resources/images/manual/arrowleft.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="122.0" fitWidth="122.0" onMouseClicked="#nextPage" pickOnBounds="true" preserveRatio="true" translateX="450.0" translateY="415.0">
          <image>
-            <Image url="@nl/hsl/heist/resources/images/manual/arrowright.png" />
+            <Image url="@../resources/images/manual/arrowright.png" />
          </image>
       </ImageView>
       <ImageView fitHeight="90.0" fitWidth="90.0" onMouseClicked="#hide" pickOnBounds="true" preserveRatio="true" translateX="250.0" translateY="407.0">
          <image>
-             <Image url="@nl/hsl/heist/resources/images/manual/cross.png" />
+             <Image url="@../resources/images/manual/cross.png" />
          </image>
       </ImageView>
       <Label fx:id="manualLabel" text="1/10" translateY="410.0">

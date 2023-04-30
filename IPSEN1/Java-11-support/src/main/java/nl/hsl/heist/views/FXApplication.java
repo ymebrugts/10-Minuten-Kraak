@@ -11,6 +11,7 @@ import javafx.stage.WindowEvent;
 import nl.hsl.heist.controllers.ManualController;
 import nl.hsl.heist.shared.GameConfig;
 
+import java.net.URL;
 import java.rmi.NoSuchObjectException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
@@ -40,9 +41,10 @@ public class FXApplication extends Application {
      */
     @Override
     public void start(Stage primaryStage) throws Exception {
-
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("startMenu.fxml"));
-        FXMLLoader manualLoader = new FXMLLoader(getClass().getResource("manual.fxml"));
+        URL startMenuFxml = getClass().getResource("/nl/hsl/heist/views/startMenu.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(startMenuFxml);
+        URL manualFxml = FXApplication.class.getResource("/nl/hsl/heist/views/manual.fxml");
+        FXMLLoader manualLoader = new FXMLLoader(manualFxml);
 
         Parent root = fxmlLoader.load();
         Parent manual = manualLoader.load();
