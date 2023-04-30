@@ -97,8 +97,6 @@ public class BoardView extends UnicastRemoteObject implements BoardObserver {
         System.out.println("[+] board has changed!");
         // called from another thread, so we have to use the platform.
         // Create a new CompletableFuture that runs the UI updates on the JavaFX Application Thread
-        System.out.println("[+] board has changed!");
-
         CompletableFuture<Void> uiUpdateFuture = CompletableFuture.supplyAsync(() -> {
             CompletableFuture<Void> uiUpdateCompletion = new CompletableFuture<>();
             Platform.runLater(() -> {
