@@ -1,86 +1,60 @@
 
 # 10 Minuten Kraak | 10 Minute Heist
 
-A Multiplayer game using JavaFX and RMI
+A Multiplayer game using JavaFX and RMI.
 
 ## Getting Started
 
-Clone the repository and open the project in an IDE like IntelliJ
+There are two projects available:
+- The legacy Java 8 version 
+- The modernized Java 17 version which supports Maven
+
+Clone the repository and open the project in an IDE like IntelliJ.
 
 #### Java 8 project
+1. Under "File -> Project Structure" select:
+   - Project
+       - SDK: Java 1.8
+       - Language Level: SDK Default
+   - Module -> Sources
+       - Mark "src" folder as sources root 
+   - Libraries 
+       - Add the two jars as dependencies by clicking on the plus and selecting "Java"
 
+   In the project files navigate to FXApplication and right click and click "Run FXApplication() Main" to run the application
+2. Run FXApplication
 
 #### Java 17 project
-Under "File -> Project Structure" select:
-- Project
-    - SDK: Java 17
-    - Language Level: SDK Default
-- Module -> Sources
-    - Mark Java folder as sources root 
-    - Mark Resources folder as resources root
+1. Under "File -> Project Structure" select:
+   - Project
+       - SDK: Java 17
+       - Language Level: SDK Default
+   - Module -> Sources
+       - Mark Java folder as sources root 
+       - Mark Resources folder as resources root
 
-Under "FXApplication" in the top right select "Edit configuration":
-- Select Java 17 under "Build and run" and set to run "nl.hsl.heist.views.FXApplication"
+    In the project files navigate to FXApplication and right click and click "Run FXApplication() Main" to run the application
 
-
+2. Run "mvn clean install"
+3. Run FXApplication
 
 
 ### Prerequisites
-Java 8 or Java 17\
-Maven installed
-
-
-```
-Give examples
-```
-
-### Installing
-
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
+- Java 8 or Java 17
+- Maven installed
+- IntelliJ IDE is recommended
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Simply create a Maven fat JAR on the Java 17 version
+
+Creating a JAR for the Java 8 version is a little harder because you need to create a fat JAR manually.
 
 ## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
+* [JAVA](https://www.java.com/nl/) - Java 8 and 17
+* [RMI](https://docs.oracle.com/javase/tutorial/rmi/overview.html) - Java RMI Client-Server
+* [JavaFX](https://gluonhq.com/products/javafx/) - The Graphics Engine
 * [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
 
 ## Contributing
 
@@ -106,6 +80,3 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc
-
-
-
