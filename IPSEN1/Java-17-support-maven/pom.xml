@@ -4,10 +4,10 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.example</groupId>
-    <artifactId>demo4</artifactId>
+    <groupId>nl.resocode.yme</groupId>
+    <artifactId>10-minuten-kraak</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>demo4</name>
+    <name>10 minuten kraak</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
