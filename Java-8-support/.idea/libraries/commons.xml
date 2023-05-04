@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="commons">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/10-Minuten-Kraak-master/lib/commons.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
