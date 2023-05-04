@@ -92,9 +92,10 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Yme Brugts** - *Contributor* - [YmeBrugts](https://github.com/ymebrugts/)
+* **Wesley Richardson** - *Contributor* - [Asonn](https://github.com/asonn)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/ymebrugts/10-Minuten-Kraak/contributors) who participated in this project.
 
 ## License
 
