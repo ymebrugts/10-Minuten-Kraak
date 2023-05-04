@@ -11,6 +11,8 @@ There are two projects available:
 
 Clone the repository and open the project in an IDE like IntelliJ.
 
+## Run Project
+
 #### Java 8 project
 1. Under "File -> Project Structure" select:
    - Project
@@ -56,14 +58,6 @@ Creating a JAR for the Java 8 version is a little harder because you need to cre
 * [JavaFX](https://gluonhq.com/products/javafx/) - The Graphics Engine
 * [Maven](https://maven.apache.org/) - Dependency Management
 
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
 ## Authors
 
 * **Yme Brugts** - *Contributor* - [YmeBrugts](https://github.com/ymebrugts/)
@@ -74,9 +68,3 @@ See also the list of [contributors](https://github.com/ymebrugts/10-Minuten-Kraa
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
