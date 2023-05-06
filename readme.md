@@ -50,8 +50,15 @@ Clone the repository and open the project in an IDE like IntelliJ.
 
 ## Deployment
 
+### Java 17
 Simply create a Maven fat JAR on the Java 17 version
 
+mvn clean install
+mvn package shade:shade
+
+Ensure JRE 8 (1.8) is installed since the application is compiled to Java 8
+
+### Java 8
 Creating a JAR for the Java 8 version is a little harder because you need to create a fat JAR manually.
 
 ## Built With
