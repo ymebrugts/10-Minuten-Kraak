@@ -20,6 +20,7 @@ Clone the repository and open the project in an IDE like IntelliJ.
        - Language Level: SDK Default
    - Module -> Sources
        - Mark "src" folder as sources root 
+	   - Set Language level to 8
    - Libraries 
        - Add the two jars as dependencies by clicking on the plus and selecting "Java"
 
@@ -34,6 +35,7 @@ Clone the repository and open the project in an IDE like IntelliJ.
    - Module -> Sources
        - Mark Java folder as sources root 
        - Mark Resources folder as resources root
+	   - Set Language level to 17
 
     In the project files navigate to FXApplication and right click and click "Run FXApplication() Main" to run the application
 
