@@ -34,6 +34,19 @@
             </configuration>
           </execution>
         </executions>
+        <configuration>
+          <transformers>
+            <transformer>
+              <mainClass>nl.hsl.heist.views.Launcher</mainClass>
+            </transformer>
+          </transformers>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>nl.hsl.heist.views.Launcher</mainClass>
+            </manifest>
+          </archive>
+        </configuration>
       </plugin>
     </plugins>
   </build>
@@ -77,7 +90,7 @@
   </dependencies>
   <properties>
     <maven.compiler.target>17</maven.compiler.target>
-    <main.class>nl.hsl.heist.views.FXApplication</main.class>
+    <main.class>nl.hsl.heist.views.Launcher</main.class>
     <maven.compiler.source>17</maven.compiler.source>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>5.9.2</junit.version>
