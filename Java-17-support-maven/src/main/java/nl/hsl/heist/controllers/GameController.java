@@ -25,7 +25,6 @@ public class GameController implements GameAction, Serializable {
 
     private static final long serialVersionUID = 2277978020464604497L;
 
-    // TODO probably remove variable : private Registry registry;
     private List<RegisteredPlayer> registeredPlayers = Collections.synchronizedList(new LinkedList<RegisteredPlayer>());
     private int maxPlayerId = 1;
     private boolean started;

@@ -5,6 +5,7 @@ import nl.hsl.heist.models.Player;
 import nl.hsl.heist.models.Symbol;
 import nl.hsl.heist.models.prestige.*;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 /**
@@ -12,7 +13,7 @@ import java.util.List;
  *
  * @author Jordi, Joorden
  */
-public class EndController {
+public class EndController implements Serializable {
 
     /**
      * Function to be called from outside, starts the entire counting and sorting of the finished list.
@@ -115,7 +116,7 @@ public class EndController {
     /**
      * Checks wether the first and second winners are or are not the same.
      * Hands out prestige if they are not the same.
-     * 
+     *
      * @param players List of players of one type.
      * @param symbol Symbol to check the players on.
      * @param prestige Prestige to hand out.
@@ -135,7 +136,7 @@ public class EndController {
         if (firstPlace != secondPlace) {
             if (prestige instanceof LeastCurse)
                 players.get(players.size()-1).getPrestiges().add(prestige);
-            else 
+            else
                 players.get(0).getPrestiges().add(prestige);
         }
     }
